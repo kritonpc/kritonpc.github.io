@@ -1,21 +1,25 @@
-<html>
-<body>
-<h1>Πολιτική Απορρήτου</h1>
-<p>Η εφαρμογή Ανακριτής η οποία είναι δωρεάν, με χρήση διαφημίσεων. Η εφαρμογή παρέχεται από τον προγραμματιστή ονόματι Κρίτων Γεωργίου δωρεάν και προορίζεται για χρήση στη μορφή που βρίσκεται.</p>
-
-<p>Αυτή η σελίδα υπάρχει για να ενημερώνει τους χρήστες σχετικά με την πολιτική απορρήτου της εφαρμογής, την οποία η χρήστης αποδέχεται όταν κατεβάζει την εφαρμογή.</p>
-
-<p><strong>Συλλογή και Χρήση Δεδομένων</strong></p>
-<p>Η εφαρμογή δε θα ζητήσει καθόλου προσωπικά δεδομένα από το χρήστη, πέρα του ονόματός του, στο οποίο δεν είναι υποχρεωμένος να απαντήσει με το αληθινό και το οποίο δεν επεξεργάζεται κανένα φυσικό πρόσωπο, παρά μόνο οι διακομιστές του παιχνιδιού.</p>
-<p>Η εφαρμογή κάνει χρήση της κάμερας, χωρίς να αποθηκεύει καμία εικόνα, παραμόνο για να πραγματοποιηθεί η σύνδεση σε κάποιο παιχνίδι.</p>
-
-<p><strong>Ασφάλεια</strong></p>
-<p>Σας διαβεβαιώνουμε πως τα δεδομένα τα οποία μας παρέχετε είναι άκρως απόρρητα και χρησιμοποιούνται αυστηρά και αποκλειστικά από τους διακομιστές μας.</p>
-
-<p><strong>Αλλαγές στην Πολιτική Απορρήτου</strong></p>
-<p>Η Πολιτική Απορρήτου είναι πιθανό να αλλάξει, παραμένοντας σε αυτή τη σελίδα ανανεωμένη. Σε κάθε περίπτωση αλλαγής, οι χρήστες θα ενημερώνονται.</p>
-
-<p><strong>Επικοινωνία</strong></p>
-<p>Αν υπάρχει κάποια απορία θα μπορούσατε να επικοινωνήσετε μαζί μου στο kriton.geor@gmail.com</p>
-
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Ανακριτής</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL Builds.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Ανακριτής</div>
+      </div>
+    </div>
+  </body>
 </html>
